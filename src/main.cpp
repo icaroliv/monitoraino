@@ -69,7 +69,7 @@ void connectBroker(){
 void setup() {
    Serial.begin(115200);
    pinMode(2,OUTPUT);
-   WiFi.begin("INTELBRAS V","veraluciasantos5843");
+   WiFi.begin("REDE","password");
    client.setServer("iot.eclipse.org",1883);
    client.setCallback(callback);
    timeClient.begin();
